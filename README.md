@@ -92,7 +92,8 @@ Actual result: product.InterestRate = 5.5
 My own rule in Test 6:
 - If the person has a credit score lower than 800 we increase the interest_rate on the product
   by 10.
-  
+
+Test 6:
 "CreditScore" : 710,
 "State" : "California"
 "Name" : "7-1 ARM",
