@@ -50,9 +50,10 @@ Expectations:
 4. Upload your solution to github giving instructions on how to run the rules engine and any tests.
 5. Finally, be prepared to lead a review on the submitted code to discuss any patterns or design decisions you made.
 
-//To test run TestRules.verifyRules()
+//To test run "TestRunner"
 
 //Test Data / Results:
+
 Test 1:
 "CreditScore" : 720,
 "State" : "Florida"
