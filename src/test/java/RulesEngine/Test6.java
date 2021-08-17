@@ -21,13 +21,8 @@ public class Test6 {
         //"State" : "California"
         //  "Name" : "7-1 ARM",
         //  "InterestRate" : 5.0
-
         assertEquals("Test 6: Product is not disqualified as expected ", product1.Disqualified, false);
         assertEquals("Test 6: Product's interested rate is not that expected ", product1.InterestRate, 16.0, 0);
-
-        //System.out.printf("Test: Is the product disqualified ? %b", product1.Disqualified);
-        //System.out.println(product1.Disqualified ? "PASSED" : "FAILED");
-        //System.out.printf("Test: Is InterestRate equals expected value? %f", product1.InterestRate);
 
     }
 }

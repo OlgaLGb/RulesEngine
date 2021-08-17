@@ -23,9 +23,5 @@ public class Test4 {
         assertEquals("Test 4: Product is not disqualified as expected ", product1.Disqualified, false);
         assertEquals("Test 4: Product's interested rate is not that expected ", product1.InterestRate, 6.0, 0);
 
-        //System.out.printf("Test: Is the product disqualified ? %b", product1.Disqualified);
-        //System.out.println(product1.Disqualified ? "PASSED" : "FAILED");
-        //System.out.printf("Test: Is InterestRate equals expected value? %f", product1.InterestRate);
-
     }
 }

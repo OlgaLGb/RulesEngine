@@ -20,7 +20,5 @@ public class Test1 {
 
             assertEquals("Test 1: Product is not disqualified as expected ", product1.Disqualified, true);
 
-            //System.out.printf("Test: Is the product disqualified ? %b", product1.Disqualified);
-            //System.out.println(product1.Disqualified ? "PASSED" : "FAILED");
         }
 }

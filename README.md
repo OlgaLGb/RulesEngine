@@ -50,15 +50,51 @@ Expectations:
 4. Upload your solution to github giving instructions on how to run the rules engine and any tests.
 5. Finally, be prepared to lead a review on the submitted code to discuss any patterns or design decisions you made.
 
-
-
 //To test run TestRules.verifyRules()
 
 //Test Data / Results:
+Test 1:
+"CreditScore" : 720,
+"State" : "Florida"
+"Name" : "7-1 ARM",
+"InterestRate" : 5.0
+Actual result: product.Disqualified  = true
 
-inter/prod | 7-1 ARM | --- |
-----------------------------
- 710       | 6       | 5.5 |
-------------------------
- 720       | 5.2     | 4.7 |
-------------------------
+Test 2:
+"CreditScore" : 720,
+"State" : "California"
+"Name" : "",
+"InterestRate" : 5.0
+Actual result: product.InterestRate = 4.7
+
+Test 3:
+"CreditScore" : 720,
+"State" : "Washington"
+"Name" : "7-1 ARM",
+"InterestRate" : 5.0
+Actual result: product.InterestRate = 5.2
+
+Test 4:
+"CreditScore" : 710,
+"State" : "California"
+"Name" : "7-1 ARM",
+"InterestRate" : 5.0
+Actual result: product.InterestRate = 6.0
+
+Test 5:
+"CreditScore" : 710,
+"State" : "California"
+"Name" : "",
+"InterestRate" : 5.0
+Actual result: product.InterestRate = 5.5
+
+-----------------------
+My own rule in Test 6:
+- If the person has a credit score lower than 800 we increase the interest_rate on the product
+  by 10.
+"CreditScore" : 710,
+"State" : "California"
+"Name" : "7-1 ARM",
+"InterestRate" : 5.0
+Actual result: product.InterestRate = 16.0
+

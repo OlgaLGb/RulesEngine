@@ -120,9 +120,9 @@ class Rule
 
                         default:
                             throw new Exception(String.format("Unrecognized action field: {0}", ActionField));
+                    }
                 }
             }
         }
-      }
     }
 }
