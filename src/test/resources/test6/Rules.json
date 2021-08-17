@@ -1,0 +1,50 @@
+{
+  "Rules" :
+  [
+    {
+      "Name": "Rule 1",
+      "Condition" : "Equal",
+      "ConditionField" : "Person.State",
+      "ConditionValue" : "Florida",
+      "ActionType" : "Set",
+      "ActionField" : "Product.Disqualified",
+      "ActionValue" : "true"
+    },
+    {
+      "Name": "Rule 2",
+      "Condition": "GreaterThanOrEqual",
+      "ConditionField": "Person.CreditScore",
+      "ConditionValue": "720",
+      "ActionType": "Dec",
+      "ActionField": "Product.InterestRate",
+      "ActionValue": "0.3"
+    },
+    {
+      "Name": "Rule 3",
+      "Condition": "Less",
+      "ConditionField": "Person.CreditScore",
+      "ConditionValue": "720",
+      "ActionType": "Inc",
+      "ActionField": "Product.InterestRate",
+      "ActionValue": "0.5"
+    },
+    {
+      "Name": "Rule 4",
+      "Condition": "Equal",
+      "ConditionField": "Product.Name",
+      "ConditionValue": "7-1 ARM",
+      "ActionType": "Inc",
+      "ActionField": "Product.InterestRate",
+      "ActionValue": "0.5"
+    },
+    {
+      "Name": "Rule 5",
+      "Condition" : "Less",
+      "ConditionField" : "Person.CreditScore",
+      "ConditionValue" : "800",
+      "ActionType" : "Inc",
+      "ActionField" : "Product.InterestRate",
+      "ActionValue" : "10"
+    }
+  ]
+}
